@@ -1,3 +1,21 @@
+#Linguagens
+
+HTML
+
+CSS
+
+JavaScript
+
+# Para saber mais 
+
+Para saber mais: documentação do react-router-dom
+
+Você acabou de iniciar seus aprendizados no react-router-dom, uma poderosa biblioteca que irá nos ajudar de diversas formas a construir nossa aplicação.
+
+Sempre que você finalizar uma aula, sinta-se livre para aprofundar seus conhecimentos na documentação oficial do React Router 6. Ela também serve como excelente fonte de consulta. A versão 6 é a que utilizaremos durante esse curso, e assegure-se de que não está lendo as documentações de versões mais antigas, pois há diferenças no uso de determinados recursos.
+
+Bons estudos! :)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
