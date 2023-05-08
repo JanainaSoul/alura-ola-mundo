@@ -1,3 +1,4 @@
+import PaginaPadrao from "componentes/PaginaPadrao";
 import Rodape from "componentes/Rodape";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Menu from "./componentes/menu";
@@ -11,9 +12,12 @@ function AppRoutes() {
     <Menu/>
 
     <Routes>
-      <Route path="/" element={<Inicio/>} />
-      <Route path="/sobremim" element={<SobreMim/>}/>
-      <Route path="*" element={<div>Página não encontrada</div>}/>
+      <Route path="/" element={<PaginaPadrao/>}>
+        <Route path="/" element={<Inicio/>} />
+        <Route path="/sobremim" element={<SobreMim/>}/>
+      </Route>
+
+        <Route path="*" element={<div>Página não encontrada</div>}/>
     </Routes>
 
     <Rodape/>
@@ -22,3 +26,21 @@ function AppRoutes() {
 }
 
 export default AppRoutes;
+
+
+
+
+{/*  
+      na rota "/", a estrutura a ser renderizada é:
+
+      <PaginaPadrao>
+      <Inicio />
+      </PaginaPadrao>
+
+      na rota "/sobremim", a estrutura a ser renderizada é:
+
+      <PaginaPadrao>
+      <SobreMim />
+      </PaginaPadrao>
+
+      */}
