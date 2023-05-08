@@ -25,40 +25,31 @@ export default function SobreMim() {
                 e estou feliz de te ver por aqui.
             </p>
             <p className={styles.paragrafo}>
-            Minha história com programação começou no Instituto 
-            Federal do Piauí (IFPI), quando fiz o ensino médio 
-            integrado ao curso de Informática. Eu aprendi lógica de
-            programação e o básico de várias linguagens, como PHP,
-            Python, Java, mas sem aprofundar muito em cada uma delas. 
-            Eu gostava muito de estudar programação, mas na época não 
-            fazia ideia de que trabalharia com isso hoje.
+            Eu atuo como designer de interiores há mais de 15 anos.
+            Mas foi no Mestrado que finalizei em 2020 em Gestão e
+            Tecnologia em Sistemas Produtivos que comecei a me 
+            interessar pela área de tecnologia. 
+            Acabei fazendo um curso de Cientista de Dados de um
+            programa das Americanas mas resolvi mudar a rota.
             </p>
             <p className={styles.paragrafo}>
-            No ensino superior, escolhi cursar Engenharia Elétrica
-            na Universidade Federal do Piauí (UFPI). Lá eu consegui 
-            entrar no PET (Programa de Educação Tutorial), um grupo 
-            acadêmico que contribui de diversas formas para o curso. 
-            Lá eu tive a oportunidade de estudar desenvolvimento web 
-            para ser um dos mantenedores do site deles. 
+            Fiz o o processo seletivo para a formação da ONE em 
+            parceria com a Alura e em dado momento tinhamos que 
+            escolher qual trlha seguir... fiquei com muita dúvida,
+            porem resolvi ir pro FRont-End, já que sou designer e 
+            posso trazer algumas competencias dessa área.
             </p>
             <p className={styles.paragrafo}>
-            Com isso tive minha experiência de dev mais próxima da 
-            realidade, com prazos de implementação para o site, e 
-            aprendi muito enquanto codificava.
+            Estou adorando essa trilha de Front-End, estou no 
+            momento aprendendo React e achei incrivel o leque de
+            oportunidades que ele permite!
             </p>
             <p className={styles.paragrafo}>
-            E foi enquanto eu estava no PET que decidi procurar um 
-            estágio em desenvolvimento web. Eu encontrei uma vaga na 
-            Alura para o Scuba Team e percebi que ela aliava duas paixões 
-            minhas: programação e educação. Para minha felicidade, 
-            fui escolhido para fazer parte do time.
+            Espero muito conseguir fazer a tarnsição de carreira.
             </p>           
             <p className={styles.paragrafo}>
-            Desde então, tem sido aprenas aprendizados atrás de aprendizados. 
-            A Alura é uma escola não só para seus alunos e alunas, mas também 
-            para os colaboradores e colaboradoras. Hoje sou muito feliz de ter 
-            a oportunidade de trazer esses conteúdos ricos e encantadores para você. 
-            Espero que aprenda bastante!
+            Quero muito atuar como Desenvolvedora Front-End e 
+            continuar evoluindo nos meus estudos.
             </p>
 
         </PostModelo>
