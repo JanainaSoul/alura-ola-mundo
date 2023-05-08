@@ -96,6 +96,8 @@ Se a rota pai tivesse o caminho "/qualquercoisa", os caminhos das três rotas an
 
 Agora que você conhece esses recursos, deixei um desafio para você na próxima atividade, vamos lá?
 
+Como trabalhar com Markdown -> https://www.alura.com.br/artigos/como-trabalhar-com-markdown
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
