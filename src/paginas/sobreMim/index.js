@@ -36,8 +36,8 @@ export default function SobreMim() {
             Fiz o o processo seletivo para a formação da ONE em 
             parceria com a Alura e em dado momento tinhamos que 
             escolher qual trlha seguir... fiquei com muita dúvida,
-            porem resolvi ir pro FRont-End, já que sou designer e 
-            posso trazer algumas competencias dessa área.
+            porem resolvi ir pro Front-End, já que sou designer e 
+            posso trazer algumas competências dessa área.
             </p>
             <p className={styles.paragrafo}>
             Estou adorando essa trilha de Front-End, estou no 
