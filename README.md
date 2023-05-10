@@ -68,6 +68,21 @@ Utilizar o hook useParams.
 
 Com ele, obtemos os parâmetros passados para uma rota dinâmica.
 
+05 - Finalizando o projeto 
+
+Componentizar um botão;
+
+Criamos o componente BotaoPrincipal, que recebe props que definem seus estilos.
+Utilizar o hook useNavigate;
+
+Podemos utilizá-lo para fazer navegações mais complexas, como voltar para a página anterior no navegador.
+Tratar o caso de post não encontrado;
+
+Utilizamos o componente NaoEncontrada para quando um post não era encontrado. Vimos duas possíveis soluções para reutilizar o componente PaginaPadrao apenas quando um post era encontrado. Uma delas é aproveitando o Outlet e adicionando os componentes Routes e Route dentro do componente Post; outra é adicionando {children} em PaginaPadrao e permitindo ele possa ser utilizado como um componente pai direto.
+Publicar o projeto!
+
+Aprendemos como publicar seu projeto na Vercel para que o mundo possa vê-lo :)
+
 # Para saber mais 
 
 Para saber mais: documentação do react-router-dom
