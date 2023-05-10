@@ -172,6 +172,18 @@ export default function PaginaPadrao({ children }) {
 Ou seja, deixamos o componente PaginaPadrao mais reutilizável, podendo ser utilizado como rota pai ou diretamente como um componente pai. De uma forma ou de outra, PaginaPadrao irá renderizar o conteúdo ou em <Outlet /> ou em {children}.
 
 Essa também é uma solução super válida e você pode escolher a que fizer mais sentido para você!
+  
+  
+Para saber mais: links do desafio
+
+
+Consulte a documentação do Scroll To Top. Essa documentação é da versão 5 do react-router-dom, mas a solução continua válida para a versão 6 que estamos utilizando.
+
+Para se aprofundar nos métodos JavaScript que usamos no Desafio, seguem os links da documentação da MDN:
+
+filter -> https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+sort - > https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+slice -> https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 
 # Getting Started with Create React App
 
