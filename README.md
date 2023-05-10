@@ -110,6 +110,32 @@ Agora que você conhece esses recursos, deixei um desafio para você na próxima
 
 Como trabalhar com Markdown -> https://www.alura.com.br/artigos/como-trabalhar-com-markdown
 
+Para saber mais: Routes descendente
+
+
+No vídeo anterior, utilizamos um componente Routes dentro do componente Post, que já é uma rota dentro do Routes que é utilizado em routes.js. Este é o recurso de Routes descendente do react-router-dom, que é quando um componente Routes é utilizado dentro de outro.
+
+Aliás, se você abrir agora alguns dos posts do projeto no navegador (em http://localhost:3000/posts/1, por exemplo) e abrir o console, aparecerá um alerta como esse:
+
+You rendered descendant <Routes> (or called useRoutes()) at "/posts/1" (under <Route path="posts/:id">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
+
+Please change the parent <Route path="posts/:id"> to <Route path="posts/:id/*">.
+
+Traduzindo o alerta, temos algo assim:
+
+Você renderizou um <Routes> (ou chamou useRoutes()) descendente em "/posts/1", mas o caminho da rota pai não possui "*" ao final. Isso significa que se você criar rotas mais profundas, a rota pai não conseguirá renderizá-las.
+
+Por favor, altere o pai <Route path="posts/:id"> para <Route path="posts/:id/*">.
+
+No nosso caso, esse alerta passou despercebido, pois estamos utilizando apenas uma rota dentro do Routes descendente que está em Post. Mas se ele tivesse uma rota com o caminho "/posts/:id/detalhes" (ou simplesmente "detalhes", relativo ao caminho da rota pai), essa rota não seria renderizada.
+
+Então, para evitar qualquer bug no futuro e seguir as boas práticas, vamos seguir o conselho do alerta, colocando um * ao final da rota do Post:
+
+<Route path="posts/:id/*" element={<Post />} />
+  ![image](https://github.com/JanainaSoul/alura-ola-mundo/assets/104031152/c9eea4ff-821e-456b-8c79-6db4d2f897db)
+
+Dessa forma, o alerta do console irá sumir!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
