@@ -135,6 +135,43 @@ Então, para evitar qualquer bug no futuro e seguir as boas práticas, vamos seg
   ![image](https://github.com/JanainaSoul/alura-ola-mundo/assets/104031152/c9eea4ff-821e-456b-8c79-6db4d2f897db)
 
 Dessa forma, o alerta do console irá sumir!
+  
+  Para saber mais: solução alternativa com children
+
+
+No vídeo anterior, utilizamos um Routes descendente, para podermos utilizar um Route para PaginaPadrao e reutilizar seu Outlet. Porém, há outra abordagem para resolver esse problema, vamos conhecê-la?
+
+Para aplicá-la, você pode remover os Routes e Route que colocamos no componente de Post, deixando seu JSX do jeito que estava antes. Agora, vamos envolver diretamente o PostModelo por PaginaPadrao, deixando o JSX assim:
+  
+          <PaginaPadrao>
+            <PostModelo
+                fotoCapa={`/assets/posts/${post.id}/capa.png`}
+                titulo={post.titulo}
+            >
+                <div className="post-markdown-container">
+                    <ReactMarkdown>
+                        {post.texto}
+                    </ReactMarkdown>
+                </div>
+            </PostModelo>
+        </PaginaPadrao>
+
+Porém, para que consigamos renderizar o JSX que passamos para PaginaPadrao, devemos utilizar o children do React. Assim, vamos para o index.js de PaginaPadrao e receber a prop children. E, logo abaixo de <Outlet />, escrevemos {children}. O código fica assim:
+
+export default function PaginaPadrao({ children }) {
+    return (
+        <main>
+            <Banner />
+
+            <Outlet />
+            {children}
+        </main>
+    )
+}
+  
+Ou seja, deixamos o componente PaginaPadrao mais reutilizável, podendo ser utilizado como rota pai ou diretamente como um componente pai. De uma forma ou de outra, PaginaPadrao irá renderizar o conteúdo ou em <Outlet /> ou em {children}.
+
+Essa também é uma solução super válida e você pode escolher a que fizer mais sentido para você!
 
 # Getting Started with Create React App
 
