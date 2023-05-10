@@ -1,6 +1,8 @@
+import './Post.css';
 import { useParams } from "react-router-dom"
 import posts from 'json/posts.json'
 import PostModelo from "componentes/PostModelo";
+import ReactMarkdown from "react-markdown";
 
 export default function Post(){
 
@@ -12,10 +14,15 @@ const post = posts.find((post) => {
 
     return (
         <PostModelo
-            fotoCapa={`assets/posts/${post.id}/capa.png`}
+            fotoCapa={`./posts/${post.id}/capa.png`}
             titulo={post.titulo}
         >
-            Texto....
+            <div className="post-markdown-container">
+                <ReactMarkdown>
+                    {post.texto}
+                </ReactMarkdown>
+            </div>
+            
         </PostModelo>
     )
 }
